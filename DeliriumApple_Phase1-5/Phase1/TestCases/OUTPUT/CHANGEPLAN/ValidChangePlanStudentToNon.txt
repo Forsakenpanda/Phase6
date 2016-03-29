@@ -1,0 +1,17 @@
+Please specify account type
+Login successful as admin user
+Enter account holder name:
+Enter account number:
+Plan has successfully changed to a standard plan.
+Please enter account holder name:
+Please enter account number:
+Please choose amount to withdraw:
+Your balance is 699.90
+Enter account holder name:
+Enter account number:
+Plan has successfully changed to a student plan.
+Please enter account holder name:
+Please enter account number:
+Please choose amount to deposit:
+Your balance is 1200.00
+Logout Successful

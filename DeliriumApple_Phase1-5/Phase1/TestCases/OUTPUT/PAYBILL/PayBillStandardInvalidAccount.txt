@@ -1,0 +1,7 @@
+Please specify account type:
+Please enter account holder name:
+Please enter account to pay from:
+Name and Account number are not associated
+Please enter account to pay from:
+Invalid account number
+Logout successful

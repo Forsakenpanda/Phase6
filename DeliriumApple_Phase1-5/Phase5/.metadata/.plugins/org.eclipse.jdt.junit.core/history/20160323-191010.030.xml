@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ValidatorTest" project="Phase5" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="ValidatorTest" time="0.013">
+    <testcase name="withdrawalChecker" classname="ValidatorTest" time="0.004"/>
+    <testcase name="balanceChecker" classname="ValidatorTest" time="0.0"/>
+    <testcase name="depositChecker" classname="ValidatorTest" time="0.009"/>
+  </testsuite>
+</testrun>

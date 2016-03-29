@@ -1,0 +1,15 @@
+Please specify account type:
+Login successful as admin user
+Enter account holder name:
+Enter account number:
+Invalid account number. This account does not belong to you.
+Enter account holder name:
+Enter account number:
+Invalid account number.
+Enter account holder name:
+Enter account number:
+Invalid account number.
+Enter account holder name:
+Enter account number:
+Invalid account number. This account does not belong to you.
+Logout successful.

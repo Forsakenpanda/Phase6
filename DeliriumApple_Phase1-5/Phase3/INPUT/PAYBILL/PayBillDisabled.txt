@@ -1,0 +1,6 @@
+login
+standard
+George Frick
+paybill
+15000
+logout

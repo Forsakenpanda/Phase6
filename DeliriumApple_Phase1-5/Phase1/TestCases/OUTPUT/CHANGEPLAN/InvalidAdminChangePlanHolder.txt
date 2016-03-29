@@ -1,0 +1,9 @@
+Please specify account type
+Login successful as admin user
+Enter account holder name:
+Invalid account holder name.
+Enter account holder name:
+Invalid account holder name.
+Enter account holder name:
+Invalid account holder name.
+Logout Successful

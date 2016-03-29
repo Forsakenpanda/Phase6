@@ -1,0 +1,6 @@
+Please specify account type:
+Login successful as admin user
+Please enter account holder name:
+Please enter your account number:
+Successfully deleted account 10000
+Logout successful.

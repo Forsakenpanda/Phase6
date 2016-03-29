@@ -1,0 +1,6 @@
+10 Sam Fischer          00000 00000.00 S 
+01 Sam Fischer          11000 00100.00  
+04 Sam Fischer          11000 00100.10  
+01 Sam Fischer          11001 00100.00  
+04 Sam Fischer          11001 00100.05  
+00                      00000 00000.00

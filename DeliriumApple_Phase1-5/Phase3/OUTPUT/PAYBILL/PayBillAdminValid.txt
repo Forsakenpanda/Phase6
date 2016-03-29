@@ -1,0 +1,18 @@
+Please specify account type:
+Login successful as admin user
+Please enter account holder name:
+Please enter account to pay from:
+Please enter the company to pay to:
+Please enter the amount to pay:
+Bill successfully paid
+Please enter account holder name:
+Please enter account to pay from:
+Please enter the company to pay to:
+Please enter the amount to pay:
+Bill successfully paid
+Please enter account holder name:
+Please enter account to pay from:
+Please enter the company to pay to:
+Please enter the amount to pay:
+Bill successfully paid
+Logout successful.

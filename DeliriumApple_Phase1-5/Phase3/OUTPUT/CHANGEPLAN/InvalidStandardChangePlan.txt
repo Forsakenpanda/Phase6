@@ -1,0 +1,5 @@
+Please specify account type:
+Please enter account holder name:
+Login successful as standard user
+Invalid command. This is an admin only command.
+Logout successful.

@@ -1,0 +1,20 @@
+Please specify account type
+Please enter account holder name:
+Login successful as standard user
+Please enter account number
+Please choose amount to withdraw:
+Invalid amount chosen for transfer. Amount exceeds $500.00
+Please enter account number
+Please choose amount to withdraw:
+Invalid amount chosen for transfer. Amount is not payable in bills
+Please enter account number
+Please choose amount to withdraw
+Invalid amount format.
+Logout is successful
+Please specify account type 
+Please enter account holder name:
+Login successful as standard user
+Please enter account number:
+Please choose amount to withdraw:
+Insufficient funds.
+Your balance is 100.00

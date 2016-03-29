@@ -1,0 +1,10 @@
+Please specify account type:
+Please enter account holder name:
+Login successful as standard user
+Please enter account to pay from:
+Please enter the company to pay to:
+Invalid company
+Please enter account to pay from:
+Please enter the company to pay to:
+Invalid company
+Logout successful.

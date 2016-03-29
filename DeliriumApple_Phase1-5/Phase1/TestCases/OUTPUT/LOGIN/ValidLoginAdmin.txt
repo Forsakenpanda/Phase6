@@ -1,0 +1,3 @@
+Please specify account type:
+Login successful as admin user
+Logout is successful

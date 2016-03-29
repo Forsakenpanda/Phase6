@@ -1,0 +1,7 @@
+Please specify account type:
+Login successful as admin user
+Please enter account holder name:
+Please enter account number:
+Please choose amount to withdraw:
+Your balance is 500.00
+Logout successful.
