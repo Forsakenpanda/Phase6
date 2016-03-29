@@ -1,0 +1,13 @@
+Please specify account type:
+Please enter account holder name:
+Login failed; not a valid account holder
+Please specify account type:
+Please enter account holder name:
+Login failed; not a valid account holder
+Please specify account type:
+Please enter account holder name:
+Login failed; not a valid account holder
+Please specify account type:
+Please enter account holder name:
+Login successful as standard user
+Logout successful.

@@ -1,0 +1,37 @@
+10 Troy Bartan          00000 00000.00    
+01 Troy Bartan          10000 00020.00    
+04 Troy Bartan          10000 00040.00    
+00 Troy Bartan          00000 00000.00    
+10                      00000 00000.00 A 
+04 Troy Bartan          10001 00700.10   
+00                      00000 00000.00   
+10                      00000 00000.00 A 
+08 Timothy Franklin     10002 00000.00   
+01 Timothy Franklin     10002 00100.00   
+08 Timothy Franklin     10002 00000.00   
+04 Timothy Franklin     10002 00100.00   
+00                      00000 00000.00   
+10                      00000 00000.00 A 
+05 Jose Ankin           00001 00450.50   
+05 Faker Fakersonismilm 00002 00900.10   
+00                      00000 00000.00   
+10                      00000 00000.00 A 
+06 Jose Ankin           00001 00000.00   
+06 Faker Fakersonismilm 00002 00000.00   
+00                      00000 00000.00   
+10                      00000 00000.00 A 
+07 Troy Bartan          10000 00000.00   
+00                      00000 00000.00   
+10                      00000 00000.00 A 
+09 George Frick         15000 00000.00   
+00                      00000 00000.00   
+10 Troy Bartan          00000 00000.00 S 
+03 Troy Bartan          10000 00001.00 EC
+03 Troy Bartan          10000 00001.00 CQ
+03 Troy Bartan          10000 00001.00 TV
+00 Troy Bartan          00000 00000.00   
+10 Troy Bartan          00000 00000.00 S 
+08 Troy Bartan          10000 00050.05   
+08                      20000 00050.05   
+00 Troy Bartan          00000 00000.00   
+00                                       

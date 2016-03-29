@@ -1,0 +1,12 @@
+Please specify account type 
+Login successful as admin user
+Please enter the account holder:
+Please enter the intial amount:
+Invalid amount. 
+Please enter the account holder:
+Please enter the intial amount:
+Invalid amount. 
+Please enter the account holder:
+Please enter the intial amount:
+Invalid amount. 
+Logout Successful

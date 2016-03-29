@@ -1,0 +1,8 @@
+Please specify account type:
+Login successful as admin user
+Please enter account holder name:
+Please enter account number to transfer from:
+Please enter account number to transfer to:
+Please enter amount to transfer:
+Insufficient funds
+Logout successful.

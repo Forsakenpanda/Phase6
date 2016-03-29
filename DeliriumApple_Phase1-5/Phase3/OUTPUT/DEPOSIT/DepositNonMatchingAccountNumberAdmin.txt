@@ -1,0 +1,6 @@
+Please specify account type:
+Login successful as admin user
+Please enter account holder name:
+Please enter account number:
+Name and Account number are not associated with each other
+Logout successful.

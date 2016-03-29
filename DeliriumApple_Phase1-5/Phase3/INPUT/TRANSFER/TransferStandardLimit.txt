@@ -1,0 +1,16 @@
+login
+standard
+Timothy Franklin
+transfer
+10002
+20000
+1999.00
+transfer
+10002
+20000
+1.00
+transfer
+10002
+20000
+1.00
+logout

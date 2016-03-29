@@ -1,0 +1,8 @@
+Please specify account type:
+Please enter account holder name:
+Login successful as standard user
+Please enter account to transfer from:
+Please enter account to transfer to:
+Please enter amount to transfer:
+Transfer successful from account 10000 to account 20000
+Logout successful

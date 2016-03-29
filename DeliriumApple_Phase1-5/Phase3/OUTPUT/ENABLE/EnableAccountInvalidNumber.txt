@@ -1,0 +1,6 @@
+Please specify account type:
+Login successful as admin user
+Please enter account holder name:
+Please enter your account number:
+Account not found
+Logout successful.

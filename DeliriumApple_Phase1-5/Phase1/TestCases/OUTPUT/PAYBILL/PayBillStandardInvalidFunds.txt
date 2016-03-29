@@ -1,0 +1,9 @@
+Please specify account type:
+Please specify account holder name:
+Login successful as standard user
+Please enter account number to pay from:
+Please enter company to pay to
+Please enter amount to pay:
+Insufficient funds
+Your balance is 500.00
+Logout successful

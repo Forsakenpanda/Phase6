@@ -1,0 +1,12 @@
+﻿  BankTerminal.cpp
+c:\users\100523201\desktop\softwarequality\phase2.2\bankterminal\bankterminal\bankterminal.cpp(141): warning C4553: '==': operator has no effect; did you intend '='?
+c:\users\100523201\desktop\softwarequality\phase2.2\bankterminal\bankterminal\bankterminal.cpp(227): warning C4129: '.': unrecognized character escape sequence
+c:\users\100523201\desktop\softwarequality\phase2.2\bankterminal\bankterminal\bankterminal.cpp(305): warning C4129: '.': unrecognized character escape sequence
+c:\users\100523201\desktop\softwarequality\phase2.2\bankterminal\bankterminal\bankterminal.cpp(390): warning C4129: '.': unrecognized character escape sequence
+c:\users\100523201\desktop\softwarequality\phase2.2\bankterminal\bankterminal\bankterminal.cpp(484): warning C4129: '.': unrecognized character escape sequence
+c:\users\100523201\desktop\softwarequality\phase2.2\bankterminal\bankterminal\bankterminal.cpp(665): warning C4129: '[': unrecognized character escape sequence
+c:\users\100523201\desktop\softwarequality\phase2.2\bankterminal\bankterminal\bankterminal.cpp(671): warning C4129: '.': unrecognized character escape sequence
+c:\users\100523201\desktop\softwarequality\phase2.2\bankterminal\bankterminal\bankterminal.cpp(781): warning C4018: '<': signed/unsigned mismatch
+c:\users\100523201\desktop\softwarequality\phase2.2\bankterminal\bankterminal\bankterminal.cpp(788): warning C4018: '<': signed/unsigned mismatch
+c:\users\100523201\desktop\softwarequality\phase2.2\bankterminal\bankterminal\bankterminal.cpp(809): warning C4129: '.': unrecognized character escape sequence
+  BankTerminal.vcxproj -> C:\Users\100523201\Desktop\SoftwareQuality\Phase2.2\BankTerminal\Debug\BankTerminal.exe

@@ -1,0 +1,6 @@
+Please specify account type:
+Login successful as admin user
+Please enter account holder:
+Please enter the initial amount:
+Account created, account number is 00001 with balance 450.50
+Logout successful.

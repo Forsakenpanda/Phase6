@@ -1,0 +1,8 @@
+Please specify account type:
+Please enter account holder name:
+Login successful as standard user
+Logout successful.
+Please specify account type:
+Please enter account holder name:
+Login successful as standard user
+Logout successful.

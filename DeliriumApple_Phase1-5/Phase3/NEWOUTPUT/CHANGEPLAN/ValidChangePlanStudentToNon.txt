@@ -1,0 +1,17 @@
+Please specify account type:
+Login successful as admin user
+Enter account holder name:
+Enter account number:
+Plan has successfully changed.
+Please enter account holder name:
+Please enter account number:
+Please choose amount to withdraw:
+Your balance is 700.00
+Enter account holder name:
+Enter account number:
+Plan has successfully changed.
+Please enter account holder name:
+Please enter account number:
+Please enter amount to deposit:
+Your balance is 1200.00
+Logout successful.

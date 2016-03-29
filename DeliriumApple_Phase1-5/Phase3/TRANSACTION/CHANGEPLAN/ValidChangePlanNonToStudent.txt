@@ -1,0 +1,6 @@
+10                      00000 00000.00 A 
+08 Timothy Franklin     10002 00000.00   
+01 Timothy Franklin     10002 00100.00   
+08 Timothy Franklin     10002 00000.00   
+04 Timothy Franklin     10002 00100.00   
+00                      00000 00000.00   

@@ -1,0 +1,14 @@
+Please specify account type:
+Please enter account holder name:
+Login successful as standard user
+Please enter account number:
+Please enter amount to deposit:
+Invalid amount: balance would exceed 99999.99 limit
+Logout successful.
+Please specify account type:
+Login successful as admin user
+Please enter account holder name:
+Please enter account number:
+Please enter amount to deposit:
+Invalid amount: balance would exceed 99999.99 limit
+Logout successful.

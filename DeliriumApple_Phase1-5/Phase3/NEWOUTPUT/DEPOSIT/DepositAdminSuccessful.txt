@@ -1,0 +1,7 @@
+Please specify account type:
+Login successful as admin user
+Please enter account holder name:
+Please enter account number:
+Please enter amount to deposit:
+Your balance is 1900.10
+Logout successful.

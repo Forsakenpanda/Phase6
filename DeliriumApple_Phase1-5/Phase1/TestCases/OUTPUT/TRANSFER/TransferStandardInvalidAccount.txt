@@ -1,0 +1,12 @@
+Please specify account type:
+Please enter account holder name:
+Login successful as standard user.
+Please enter account to transfer from:
+Name and Account number are not associated with each other
+Please enter account to transfer from:
+Please enter account to transfer to:
+Account number does not exist
+Please enter account to transfer from:
+Please enter account to transfer to:
+Invalid account number
+Logout successful

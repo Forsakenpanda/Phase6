@@ -1,0 +1,7 @@
+Please specify account type:
+Please enter account holder name:
+Login successful as standard user
+Please enter account number:
+Please choose amount to withdraw:
+Your balance is 34.95
+Logout successful.

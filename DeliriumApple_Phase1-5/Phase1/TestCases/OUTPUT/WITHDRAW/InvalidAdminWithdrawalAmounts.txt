@@ -1,0 +1,20 @@
+Please specify account type: 
+Login successful as admin user
+Please enter account holder name:
+Please enter account number:
+Please choose amount to withdraw:
+Insufficient funds.
+Your balance is 500.00
+Please enter account holder name:
+Please enter account number:
+Please choose amount to withdraw:
+Invalid amount chosen for transfer. Amount is not payable in bills.
+Please enter account holder name:
+Please enter account number:
+Please choose amount to withdraw:
+Invalid amount format.
+Please enter account holder name:
+Please enter account number:
+Please choose amount to withdraw:
+Invalid amount format.
+Logout successful.
