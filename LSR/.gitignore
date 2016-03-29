@@ -1,0 +1,6 @@
+bin/frontend/*
+!bin/frontend/.gitkeep
+bin/backend/*
+!bin/backend/.gitkeep
+*.class
+*.jar
