@@ -1,6 +1,6 @@
-#include "stdafx.h"
+
 #include "BankAccount.h"
-#include "stdafx.h"
+
 #include "BankAccount.h"
 #include <string>
 #include <iostream>

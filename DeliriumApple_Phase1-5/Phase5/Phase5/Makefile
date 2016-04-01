@@ -1,4 +1,5 @@
 all:
-	javac src/*.java
+	
+	javac src/Backend.java src/BankAccount.java src/Validator.java
 clean:
-	rm src/*.class
+	rm -f src/*.class

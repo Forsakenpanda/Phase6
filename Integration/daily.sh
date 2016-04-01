@@ -28,6 +28,8 @@ for transactions in $(pwd)/$transactionDirectory/*.TF
 do
   cat $transactions >> $(pwd)/$transactionDirectory/$mergedFile
 done
+echo "00                                       " >> $(pwd)/$transactionDirectory/merged-transactions.TF
+cat merged-transactions.TF
 # Run the back end with the merged transaction file
 java -cp $backEnd $(pwd)/$masterAccountsFile $(pwd)/$transactionDirectory/$mergedFile
 echo "Day $day processed."

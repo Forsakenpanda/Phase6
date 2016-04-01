@@ -1,5 +1,5 @@
-10000 Troy Bartan          A 00918.00 S
-10001 Troy Bartan          A 05400.40 S
+10000 Troy Bartan          A 01276.90 S
+10001 Troy Bartan          A 18001.95 S
 10002 Timothy Franklin     A 99999.99 N
 11000 Sam Fischer          A 02000.00 S
 11001 Sam Fischer          A 03000.00 N
