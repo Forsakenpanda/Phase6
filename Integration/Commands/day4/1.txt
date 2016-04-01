@@ -1,6 +1,7 @@
 login
-admin
-create
+standard
 Sponebob Squarepants
-1.00
+deposit
+3
+100.00
 logout

@@ -1,0 +1,8 @@
+login
+standard
+Rick
+paybill
+1
+CQ
+5.00
+logout

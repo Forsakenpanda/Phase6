@@ -1,3 +1,9 @@
 login
 admin
+create
+Rick
+100.00
+create
+Morty
+50.00
 logout

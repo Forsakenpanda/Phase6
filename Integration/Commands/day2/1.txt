@@ -1,6 +1,5 @@
 login
 admin
 changeplan
-Jason Runzer
-1
+Rick
 logout

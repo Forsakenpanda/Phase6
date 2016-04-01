@@ -1,3 +1,11 @@
 login
-admin
+standard
+Morty
+withdrawal
+2
+5.00
+transfer
+2
+1
+10.00
 logout
