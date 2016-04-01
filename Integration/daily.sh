@@ -20,6 +20,7 @@ rm $(pwd)/$transactionDirectory/*.TF
 for commands in $(pwd)/$commandsDirectory/day$day/*.txt
 do
   filename=$(basename $commands)
+  echo "Processing $filename"
   #run the front end
   $frontEnd $(pwd)/$currentAccountsFile $(pwd)/$transactionDirectory/day$day\-${filename%.txt}.TF < $(pwd)/$commandsDirectory/day$day/$filename
 done
