@@ -125,6 +125,7 @@ public class BackendTest {
 		assertEquals(test.get(10000).getNumber(),bank.getNumber() );
 		assertEquals(test.get(10000).getBalance(),bank.getBalance(),0.009 );
 		assertEquals(test.get(10000).getTransactions(),bank.getTransactions() );
+		
 	}	
 	
 	@Test

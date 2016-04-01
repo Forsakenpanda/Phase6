@@ -402,12 +402,12 @@ public class Backend {
 				// Gets the account balance and converts it to a float
 				String balanceString = line.substring(30, 38);
 
-				
+				System.out.println("teststststststst" + balanceString);
 				float balance = Float.parseFloat(balanceString);
 
 				// Gets the misc field
 				// TODO: Find out what this is used for?
-				String misc = line.substring(39, 41);
+				String misc = line.substring(39, 42);
 				// Here, distribute tasks depending on what the transaction code
 				// is. (FOR BALANCE CHANGES, WE SHOULD MAKE USE OF A NEW OBJECT
 				// IF POSSIBLE)
