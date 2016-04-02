@@ -27,7 +27,7 @@ public class Backend {
 	private static Validator valid = new Validator();
 	private static int testTransactionFile;
 	static String resultsGlobal = " ";
-
+	
 	/**
 	 * This soley a testing method to check for condition coverage
 	 * 
@@ -217,17 +217,28 @@ public class Backend {
 	 *            money being transfered
 	 * @return
 	 */
-	public static int create(int accountNum, String accountName, float balance) {
+	public static int create(String accountName, float balance) {
 		System.out.println("Create");
-		System.out.println(accountNum);
-		String results = valid.create(accounts, accountNum, balance);
+	
+		//Determine the first available location
+		int firstFree = 0;
+		for (int i = 0; i < accounts.size(); i++){
+			if (firstFree == accounts.get(i).getNumber()) {
+				firstFree++;
+				i = 0;
+			}
+		}
+
+		String results = valid.create(accounts, firstFree, balance);
 		resultsGlobal = results;
 		if (results.equals("Pass")) {
-			BankAccount account = new BankAccount(accountNum, accountName,
+			BankAccount account = new BankAccount(firstFree, accountName,
 					true, balance, 'N', 0);
-			accounts.put(accountNum, account);
+			accounts.put(firstFree, account);
+			
+			sort();
 		}
-		return accounts.get(accountNum).getNumber();
+		return accounts.get(firstFree).getNumber();
 	}
 
 	/**
@@ -444,7 +455,8 @@ public class Backend {
 					break;
 				case 5: // create
 					testTransactionFile = 5;
-					create(accountNum, accountName, balance);
+
+					create(accountName, balance);
 					break;
 				case 6: // delete
 					testTransactionFile = 6;
@@ -496,9 +508,9 @@ public class Backend {
 			// To remove unneeded repetition, writer must be implemented in
 			// different ways.
 			if (isMaster) {
-				writer = new PrintWriter("MasterAccountFile.txt", "UTF-8");
+				writer = new PrintWriter("Accounts/master-accounts.txt", "UTF-8");
 			} else {
-				writer = new PrintWriter("CurrentAccountFile.txt", "UTF-8");
+				writer = new PrintWriter("Accounts/current-accounts.txt", "UTF-8");
 			}
 
 			for (int i = 0; i < accounts.size(); i++) {
@@ -529,7 +541,9 @@ public class Backend {
 				if (accounts.size() - i != 1) {
 					writer.print("\n");
 				}
+
 			}
+			writer.print("\n");
 
 			writer.close();
 		} catch (IOException e) {
@@ -597,12 +611,8 @@ public class Backend {
 			return;
 		}
 
-		// Makes a List from the Hashmap of accounts
-		accountsList = new ArrayList<BankAccount>(accounts.values());
-		// Sorts the List
-		Collections.sort(accountsList);
-		// Prints the list out
-		System.out.println(accountsList);
+
+		sort();
 
 		// TODO: Just handle the transactions as standard input with the same
 		// code as in this function
@@ -613,6 +623,13 @@ public class Backend {
 		// Write to the current account file.
 		writeFile(accountsList, false);
 
+	}
+
+	public static void sort() {
+		// Makes a List from the Hashmap of accounts
+		accountsList = new ArrayList<BankAccount>(accounts.values());
+		// Sorts the List
+		Collections.sort(accountsList);
 	}
 }
 
