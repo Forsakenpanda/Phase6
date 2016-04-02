@@ -275,57 +275,7 @@ public class Backend {
 		return "fail";
 	}
 
-	/**
-	 * 
-	 * @return a list of files in a direction ending with transaction
-	 */
-	public static File[] getTransactions() {
-		File dir = new File("./");
-		File[] match = dir.listFiles(new FilenameFilter() {
-			public boolean accept(File dir, String name) {
-				return name.endsWith("Transaction.txt");
-			}
-		});
-		return match;
-	}
 
-	/**
-	 * Merges transaction files in the form xxxxTransaction.txt, where xxxx is a
-	 * number from 0001 to 9999
-	 */
-	public static void mergeTransactions() {
-		try {
-
-			FileInputStream fis;
-			BufferedReader br;
-			PrintWriter writer = new PrintWriter("MergedTransactionFile.txt",
-					"UTF-8");
-
-			// Grabbing the current directory via ./ allows dynamic usage.
-			File[] match = getTransactions();
-
-			//
-			for (File file : match) {
-				System.out.println(file.getName());
-				fis = new FileInputStream(file.getName());
-				br = new BufferedReader(new InputStreamReader(fis));
-				String line;
-				while ((line = br.readLine()) != null) {
-					writer.println(line);
-				}
-			}
-
-			// Appending an extra, empty 00 line allows subsequent methods to
-			// know which line should not compute transactions.
-			writer.print(padSpace(41, "00"));
-			writer.close();
-
-		} catch (IOException e) {
-			System.out
-					.println("ERROR: Issue reading transaction files. \n" + e);
-			return;
-		}
-	}
 
 	/**
 	 * Takes the inputed MasterAccountsFile, and stores this data in a map.
@@ -601,8 +551,6 @@ public class Backend {
 			return;
 		}
 
-		// Merge the transactions initially, in case any changes have been made.
-		mergeTransactions();
 
 		accounts = importAccountsFile(args[0]);
 
