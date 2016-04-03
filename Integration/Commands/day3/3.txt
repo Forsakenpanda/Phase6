@@ -1,6 +1,6 @@
 login
 admin
 enable
-Spongebob Squarepants
+Spongebob Squarepant
 3
 logout

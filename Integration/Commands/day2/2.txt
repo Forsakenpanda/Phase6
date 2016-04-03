@@ -1,9 +1,0 @@
-login
-admin
-disable
-Spongebob Squarepants
-3
-disable
-Ice Cube
-4
-logout

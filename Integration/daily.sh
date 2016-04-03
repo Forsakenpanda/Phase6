@@ -20,20 +20,20 @@ frontEnd="../LSR/bin/frontend/frontend"
 backEnd="Default.Main"
 mergedFile="merged-transactions.TF"
 # Remove all files in the transaction directory
-rm $(pwd)/$transactionDirectory/*.TF
+rm $(pwd)/$transactionDirectory/day$day/*.TF
 # Read in the commands for the day and start the front end with redirected input
 for commands in $(pwd)/$commandsDirectory/day$day/*.txt
 do
   filename=$(basename $commands)
   echo "Processing $filename"
   #run the front end
-  $frontEnd $(pwd)/$currentAccountsFile $(pwd)/$transactionDirectory/day$day\-${filename%.txt}.TF < $(pwd)/$commandsDirectory/day$day/$filename
+  $frontEnd $(pwd)/$currentAccountsFile $(pwd)/$transactionDirectory/day$day/${filename%.txt}.TF < $(pwd)/$commandsDirectory/day$day/$filename
 done
 # Merge the transaction files
-for transactions in $(pwd)/$transactionDirectory/*.TF
+for transactions in $(pwd)/$transactionDirectory/day$day/*.TF
 do
-  cat $transactions >> $(pwd)/$transactionDirectory/$mergedFile
+  cat $transactions >> $(pwd)/$transactionDirectory/day$day/$mergedFile
 done
 # Run the back end with the merged transaction file
-java -cp "../HardWaterBackEnd" $backEnd $(pwd)/$masterAccountsFile $(pwd)/$currentAccountsFile $(pwd)/$transactionDirectory/$mergedFile
+java -cp "../HardWaterBackEnd" $backEnd $(pwd)/$masterAccountsFile $(pwd)/$currentAccountsFile $(pwd)/$transactionDirectory/day$day/$mergedFile
 echo "Day $day processed."

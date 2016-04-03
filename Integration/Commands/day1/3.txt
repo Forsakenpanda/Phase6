@@ -1,12 +1,6 @@
 login
 admin
 create
-Ice Cube
-200.00
-logout
-login
-admin
-create
-Tim
-50.25
+Spongebob Squarepant
+1.00
 logout

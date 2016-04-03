@@ -1,6 +1,18 @@
 login
 admin
 create
-Spongebob Squarepant
-10.00
+DSNAccount
+100.00
+create
+DSSAccount
+100.00
+create
+DAAccount
+100.00
+create
+DeleteAccount
+100.00
+create
+EDAccount
+100.00
 logout
