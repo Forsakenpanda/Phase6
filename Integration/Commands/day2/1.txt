@@ -1,5 +1,9 @@
 login
 admin
+deposit
+CAccount
+00015
+50.00
 delete
 DeleteAccount
 00013
