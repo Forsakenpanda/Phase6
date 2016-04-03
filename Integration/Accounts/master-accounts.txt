@@ -10,7 +10,6 @@
 00010 DSNAccount           A 00100.00 0000 N
 00011 DSSAccount           A 00100.00 0000 N
 00012 DAAccount            A 00100.00 0000 N
-00013 DeleteAccount        A 00100.00 0000 N
 00014 EDAccount            A 00100.00 0000 N
 00015 CAccount             A 00500.00 0000 N
 00016 CAccount             A 00400.00 0000 N
