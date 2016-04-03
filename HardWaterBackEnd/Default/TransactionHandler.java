@@ -206,7 +206,7 @@ public class TransactionHandler {
 	 * @return true if the paybll is successful
 	 */
 	public boolean paybill(int accountIndex, double funds, String misc) {
-		if(!misc.equals("EC") && !misc.equals("CP") && !misc.equals("TV")){
+		if(!misc.equals("EC") && !misc.equals("CQ") && !misc.equals("TV")){
 			Main.reportError("company does not exist");
 			return false;
 		}
