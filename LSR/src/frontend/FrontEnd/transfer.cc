@@ -63,7 +63,7 @@ void FrontEnd::handleTransfer() {
     }
 
     // Make sure they don't exceed the daily transfer limit.
-    if (sourceAccount->transferTotal + transferAmount > DAILY_TRANSFER_LIMIT 
+    if (sourceAccount->transferTotal + transferAmount > DAILY_TRANSFER_LIMIT
             && !currentUserIsAdmin) {
       std::cout
         << MESSAGE_ERROR_HIT_TRANSFER_LIMIT(
@@ -92,11 +92,11 @@ void FrontEnd::handleTransfer() {
 
   // Write transaction to transaction log.
   writeToTransactionFile(TRANSACTION_CODE_TRANSFER, name, sourceAccount->id,
-                         transferAmount, "");
+                         transferAmount, "FR");
 
   writeToTransactionFile(TRANSACTION_CODE_TRANSFER,
                          destinationAccount->accountHolderName,
-                         destinationAccount->id, transferAmount, "");
+                         destinationAccount->id, transferAmount, "TO");
 
   // Print success message.
   std::cout
