@@ -15,4 +15,14 @@ DeleteAccount
 create
 EDAccount
 100.00
+create
+CAccount
+500.00
+create
+CAccount
+400.00
+withdrawal
+CAccounts
+5.00
+cancel
 logout

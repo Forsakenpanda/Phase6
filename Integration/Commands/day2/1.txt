@@ -1,0 +1,10 @@
+login
+admin
+delete
+DeleteAccount
+00013
+deposit
+DeleteAccount
+5.00
+cancel
+logout
