@@ -45,6 +45,9 @@ public class Main {
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
+    // args[0] - master account file
+    // args[1] - current account file
+    // args[2] - merged transaction file
 		accounts = new ArrayList<Account>();
 		FileReader accountFileReader;
 		boolean masterAccountsFileFound = false;
@@ -53,13 +56,13 @@ public class Main {
 			String line;
 			// add the accounts into the system
 			// try to read from the master
-			File f = new File("../Application/Accounts/master-valid-accounts.txt");
+			File f = new File(args[0]);
 			if(f.exists() && !f.isDirectory()) { 
 			    // do something
-				 accountFileReader = new FileReader ("../Application/Accounts/master-valid-accounts.txt");
+				 accountFileReader = new FileReader (args[0]);
 				 masterAccountsFileFound = true;
 			} else {
-				accountFileReader = new FileReader("../Application/Accounts/current-valid-accounts.txt");
+				accountFileReader = new FileReader(args[1]);
 			}
 			
 			BufferedReader accountBufferedReader = new BufferedReader(accountFileReader);
@@ -81,18 +84,17 @@ public class Main {
 			Main.reportError("something went wrong with the account reader");
 		}
 
-		tr = new TransactionReader("../Application/TF/");
+		tr = new TransactionReader(args[2]);
 		handler = new TransactionHandler(accounts);
 		while(tr.hasNext()){
 			dispatch(tr.getNext());
 		}
 
 		accounts = handler.getAccounts();
-		AccountWriter aw = new AccountWriter("../Application/Accounts/", false);
+		AccountWriter aw = new AccountWriter(args[0], false);
 		aw.write(accounts);
-		AccountWriter ca = new AccountWriter("../Application/Accounts/", true);
+		AccountWriter ca = new AccountWriter(args[1], true);
 		ca.write(accounts);
-		//TO DO: delete all transaction files
 	}
 
 	

@@ -37,47 +37,8 @@ public class TransactionReader {
 		line = "";
 		nextLine = "";
 		index = -1;
-		// referenced for listing files: http://stackoverflow.com/questions/5694385/getting-the-filenames-of-all-files-in-a-folder
-		folder = new File(location);
-		fileList = folder.listFiles();
-		try {
-			// used from https://www.caveofprogramming.com/java/java-file-reading-and-writing-files-in-java.html
-			File mergedTF = new File(location + "mergedTransactionFile.txt");
-			// delete the old merged file
-			mergedTF.delete();
-			FileWriter fileWriter = new FileWriter(location + "mergedTransactionFile.txt");
-			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-			// merge all the transaction files in the directory
-			for (int i = 0; i < fileList.length; i++) {
-				// check if the file is not the one to merge too
-				if(fileList[i].isFile() && !fileList[i].getName().equals("mergedTransactionFile.txt")) {
-					String name = fileList[i].getName();
-					try {
-						String line;
-						// make a new file reader for the new file in the list
-						FileReader fileReader = new FileReader(location + name);
-						BufferedReader bufferedReader = new BufferedReader(fileReader);
-						// append the entire file to the mergedFile
-						while((line = bufferedReader.readLine()) != null) {
-							bufferedWriter.write(line);
-							// add a new line if there is more to go
-							bufferedWriter.newLine();
-						}
-						bufferedReader.close();
-					} catch (Exception e) {
-						Main.reportError("The files could not be read");
-					}
-					// delete file somewhere here
-					// fileList[i].delete();
-				}
-			}
-			bufferedWriter.close();
-		} catch (Exception e) {
-			Main.reportError("Something went wrong with the merged file");
-		}
-		// try to open up the fileReader and get the first two lines of the buffer
 		try {		
-			transactionFileReader = new FileReader(location + "mergedTransactionFile.txt");
+			transactionFileReader = new FileReader(location);
 			transactionBufferedReader = new BufferedReader(transactionFileReader);
 			line = transactionBufferedReader.readLine();
 			nextLine = transactionBufferedReader.readLine();

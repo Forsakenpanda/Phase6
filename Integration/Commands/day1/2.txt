@@ -1,6 +1,6 @@
 login
 admin
 create
-Sponegbob Squarepants
-1.00
+Spongebob Squarepant
+10.00
 logout

@@ -30,21 +30,13 @@ public class AccountWriter {
 	 */
 	public AccountWriter (String location, boolean current) {
 		this.current = current;
-		//Initialize the file variable to write to the proper txt file.
-		if (current)
-			file = new File(location + "current-valid-accounts.txt");
-		else
-			file = new File(location + "master-valid-accounts.txt");
-		
-		//currents to see if the file already exists in the directory
-		if(!file.exists()) {
-			try {	
-					file.createNewFile();			
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-		
+    //Initialize the file variable to write to the proper txt file.
+    try {
+  	file = new File(location);
+	  file.createNewFile();			
+    } catch (IOException e) {
+      Main.reportError("cannot delete account file");
+    }
 	}
 	
 	/**

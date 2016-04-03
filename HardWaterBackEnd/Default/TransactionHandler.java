@@ -1,5 +1,6 @@
 package Default;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TransactionHandler {
 	ArrayList<Account> accounts;
@@ -152,18 +153,19 @@ public class TransactionHandler {
 	 * @return
 	 */
 	public  boolean create(String name, int accountNumber, double funds, String misc) {
-		int indexVal;
-		indexVal = findAccount(accountNumber);
 		//Checks to make sure no other account has the same account number.
-		if(indexVal != -1) {
-			Main.reportError("That account number already exists");
-			return false;
-		}
+    Collections.sort(accounts);
+    int newAccountNum = 1;
+    for (int i = 0; i < accounts.size(); i++) { 
+      if (accounts.get(i).getAccountNum() != newAccountNum)
+        break;
+      newAccountNum++;
+    }
 		if(standardSession) {
 			Main.reportError("Must be an admin to create an account");
 			return false;
 		}
-		accounts.add(new Account(accountNumber, name, true, funds, 'N', 0));
+		accounts.add(new Account(newAccountNum, name, true, funds, 'N', 0));
 		return true;
 	}
 
