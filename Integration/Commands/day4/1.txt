@@ -1,7 +1,0 @@
-login
-standard
-Sponebob Squarepants
-deposit
-3
-100.00
-logout
