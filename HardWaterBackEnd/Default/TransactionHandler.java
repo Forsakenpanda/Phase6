@@ -107,7 +107,7 @@ public class TransactionHandler {
 			return false;
 		}
 		// see if the transaction misc information is right and then transfer money
-		if (splitTransaction[4].equals("T ") && misc.equals("F ")){
+		if (splitTransaction[4].equals("TO") && misc.equals("FR")){
 			fee = accounts.get(accountIndex).getFee(standardSession);
 			if(accounts.get(secondIndex).modifyFunds(funds, 0, true)) {
 				if(!accounts.get(accountIndex).modifyFunds(funds, fee, false)){
@@ -120,7 +120,7 @@ public class TransactionHandler {
 				Main.reportError("transfer failed");
 				return false;
 			}
-		} else if (splitTransaction[4].equals("F ") && misc.equals("T ")) {
+		} else if (splitTransaction[4].equals("FR") && misc.equals("TO")) {
 			fee = accounts.get(secondIndex).getFee(standardSession);
 			if(accounts.get(accountIndex).modifyFunds(funds, 0, true)) {
 				if(!accounts.get(secondIndex).modifyFunds(funds, fee, false)){

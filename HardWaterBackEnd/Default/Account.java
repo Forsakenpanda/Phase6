@@ -16,7 +16,7 @@ public class Account implements Comparable<Account> {
 	 * These variables are all aspects of what belongs in an account.
 	 */
 	private int accountNumber;
-	private double funds;
+	private int funds;
 	private boolean enabled;
 	private String name;
 	private char plan;
@@ -34,7 +34,7 @@ public class Account implements Comparable<Account> {
 	public Account(int accountNumber, String name, boolean enabled, double funds, char plan, int counter) {
 		this.accountNumber = accountNumber;
 		this.name = name;
-		this.funds = funds;
+		this.funds = (int) (funds * 100);
 		this.enabled = enabled;
 		this.plan = plan;
 		this.counter = counter;
@@ -53,7 +53,7 @@ public class Account implements Comparable<Account> {
 	 * @return the amount of money in the account.
 	 */
 	public double getFunds() {
-		return funds;
+		return funds / 100.0;
 	}
 	
 	/**
@@ -122,12 +122,14 @@ public class Account implements Comparable<Account> {
 				Main.reportError("cannot withdrawal a negative or zero amount");
 				return false;
 			}
-			funds = 0 - funds;
 			// Checks whether the funds will be above zero after the transaction
-			if(this.funds + funds - fee < 0){
+			if(this.funds - (int) (100 * funds) - (int) (fee * 100) < 0){
+        System.out.println("funds : " + (this.funds + funds - fee));
+        System.out.println("fee: " + fee);
 				Main.reportError("not enough funds");
 				return false;
 			}
+      this.funds = this.funds - (int) (funds * 100) - (int) (fee * 100);
 		}
 		else {
 			if (funds <= 0) {
@@ -135,14 +137,14 @@ public class Account implements Comparable<Account> {
 				return false;
 			}
 			//see if we will exceed the maximum
-			if(this.funds + funds - fee > 99999.99){
+			if(this.funds * 100 + (int) (funds * 100) - (int) (fee * 100) > (99999.99 * 100)){
 				Main.reportError("transaction would exceed maximum funds");
 				return false;
 			}
+		 this.funds = this.funds + (int) (funds * 100) - (int) (fee * 100);
+
 		}
 		//perform the addition
-		this.funds = Double.valueOf(df.format(this.funds)) + Double.valueOf(df.format(funds)) - Double.valueOf(fee);
-		this.funds = Double.valueOf(df.format(this.funds));
 		counter++;
 		return true;
 	}

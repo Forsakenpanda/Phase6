@@ -1,6 +1,0 @@
-login
-admin
-enable
-Spongebob Squarepant
-3
-logout
