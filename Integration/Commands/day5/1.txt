@@ -1,0 +1,13 @@
+login
+standard
+DSNAccount
+deposit
+10
+5.00
+logout
+login
+admin
+changeplan
+DSSAccount
+00011
+logout

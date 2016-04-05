@@ -16,6 +16,9 @@ create
 EDAccount
 100.00
 create
+DUBAccount
+99999.99
+create
 CAccount
 500.00
 create
