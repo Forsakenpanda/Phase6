@@ -11,7 +11,7 @@
 00 TFSSAccount          00000 00000.00   
 10                      00000 00000.00 A 
 02 TFAAccount           00008 00100.00 FR
-02 Spongebob Squarepant 00017 00100.00 TO
+02 CAccount             00017 00100.00 TO
 00                      00000 00000.00   
 10                      00000 00000.00 A 
 08 CPAccount            00009 00000.00   
