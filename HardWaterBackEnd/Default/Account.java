@@ -21,6 +21,10 @@ public class Account implements Comparable<Account> {
 	private String name;
 	private char plan;
 	private int counter;
+  private int transferLimit;
+  private int paybillLimit;
+  private int withdrawalLimit;
+  private int depositLimit;
 
 	/**
 	 * Constructor for Account.
@@ -38,6 +42,10 @@ public class Account implements Comparable<Account> {
 		this.enabled = enabled;
 		this.plan = plan;
 		this.counter = counter;
+    this.paybillLimit = 0;
+    this.transferLimit = 0;
+    this.withdrawalLimit = 0;
+    this.depositLimit = 0;
 	}
 	
 	/**
@@ -47,7 +55,62 @@ public class Account implements Comparable<Account> {
 	public String getName () {
 		return name;
 	}
+  
+  /**
+   * Returns the current amount of money that has been paid in a 
+   * standard session.
+   * @return the paybill fund use.
+   */
+  public int getPaybillLimit () {
+    return paybillLimit;
+  }
+
+  /**
+   * Returns the current amount of money that has been transfered in 
+   * a standard session.
+   * @return the money that was transfered.
+   */ 
+  public int getTransferLimit() {
+    return transferLimit;
+  }
+
+  /**
+   * Returns the current amount of money that has been deposited in
+   * a standard session.
+   * @return the money that was deposited
+   */ 
 	
+
+  public int getWithdrawalLimit() {
+    return withdrawalLimit;
+  }
+  
+  public void addDepositLimit(int money) {
+    depositLimit += money;
+  }
+  /**
+   * Increases the withdrawal limit.
+   * @param money the money to add to the limit
+   */ 
+  public void addWithdrawalLimit(int money) {
+    withdrawalLimit += money; 
+  }
+  
+  /**
+   * Increases the transfer limit.
+   * @param money the money to add to the limit
+   */
+  public void addTransferLimit(int money) {
+    transferLimit += money;
+  }
+  /**
+   * Increases the paybill limit.
+   * @param money the money to add to the limit
+   */ 
+  public void addPaybillLimit(int money) {
+    paybillLimit += money;
+  }
+
 	/**
 	 * Returns the amount of money in the account.
 	 * @return the amount of money in the account.
@@ -123,7 +186,7 @@ public class Account implements Comparable<Account> {
 				return false;
 			}
 			// Checks whether the funds will be above zero after the transaction
-			if(this.funds - (int) (100 * funds) - (int) (fee * 100) < 0){
+			if(this.funds - (int) (100 * funds) - (int) (fee * 100) - depositLimit < 0){
         System.out.println("funds : " + (this.funds + funds - fee));
         System.out.println("fee: " + fee);
 				Main.reportError("not enough funds");

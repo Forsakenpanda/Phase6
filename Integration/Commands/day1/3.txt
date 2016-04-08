@@ -3,4 +3,10 @@ admin
 create
 Spongebob Squarepant
 1.00
+create
+transferLimitFR
+2000.00
+create
+transferLimitTO
+1.00
 logout

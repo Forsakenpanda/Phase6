@@ -56,7 +56,14 @@ public class TransactionHandler {
 		double fee;
 		//Passes in the statues of whether it is an admin transaction or standard transaction
 		fee = accounts.get(accountIndex).getFee(standardSession);
-		return accounts.get(accountIndex).modifyFunds(funds, fee, false);
+    if (standardSession && accounts.get(accountIndex).getWithdrawalLimit() + funds * 100 > 50000)
+      return false;
+		if (accounts.get(accountIndex).modifyFunds(funds, fee, false)) {
+      if (standardSession)
+        accounts.get(accountIndex).addWithdrawalLimit((int) funds * 100);
+      return true;
+    }
+    return false;
 	}
 
 	/**
@@ -71,6 +78,9 @@ public class TransactionHandler {
 		if (!accounts.get(accountIndex).modifyFunds(funds, fee, true)) {
 			Main.reportError("Not enough funds added");
 		}
+    if (standardSession) {
+      accounts.get(accountIndex).addDepositLimit((int) funds * 100);
+    }
 		return true;
 	}
 
@@ -109,6 +119,10 @@ public class TransactionHandler {
 		// see if the transaction misc information is right and then transfer money
 		if (splitTransaction[4].equals("TO") && misc.equals("FR")){
 			fee = accounts.get(accountIndex).getFee(standardSession);
+      if (standardSession && accounts.get(accountIndex).getTransferLimit() + funds * 100 > 100000) {
+        Main.reportError("exceeded transfer limit");
+        return false;
+      }
 			if(accounts.get(secondIndex).modifyFunds(funds, 0, true)) {
 				if(!accounts.get(accountIndex).modifyFunds(funds, fee, false)){
 					// restore the funds to the old balance
@@ -116,12 +130,18 @@ public class TransactionHandler {
 					Main.reportError("transfer failed");
 					return false;
 				}
+        if (standardSession)
+          accounts.get(accountIndex).addTransferLimit((int) funds * 100);
 			} else {
 				Main.reportError("transfer failed");
 				return false;
 			}
 		} else if (splitTransaction[4].equals("FR") && misc.equals("TO")) {
 			fee = accounts.get(secondIndex).getFee(standardSession);
+       if (standardSession && accounts.get(secondIndex).getTransferLimit() + funds * 100 > 100000) {
+        Main.reportError("exceeded transfer limit");
+        return false;
+       }
 			if(accounts.get(accountIndex).modifyFunds(funds, 0, true)) {
 				if(!accounts.get(secondIndex).modifyFunds(funds, fee, false)){
 					// restore the funds to the old balance
@@ -129,6 +149,8 @@ public class TransactionHandler {
 					Main.reportError("transfer failed");
 					return false;
 				}
+        if (standardSession)
+           accounts.get(secondIndex).addTransferLimit((int) funds * 100);
 			} else {
 				Main.reportError("transfer failed");
 				return false;
@@ -211,7 +233,16 @@ public class TransactionHandler {
 			return false;
 		}
 		double fee = accounts.get(accountIndex).getFee(standardSession);
-		return 	accounts.get(accountIndex).modifyFunds(funds, fee, false);
+    if (standardSession && accounts.get(accountIndex).getPaybillLimit() + funds * 100 > 200000) {
+      Main.reportError("exceeded paybill limit");
+      return false;
+    }
+		if (accounts.get(accountIndex).modifyFunds(funds, fee, false)) {
+      if (standardSession)
+        accounts.get(accountIndex).addPaybillLimit((int) funds * 100);
+      return true;
+    }
+    return false;
 	}
 
 	/**

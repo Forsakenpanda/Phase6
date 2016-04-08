@@ -1,0 +1,8 @@
+login
+standard
+transferLimitFR
+transfer
+20
+21
+500.00
+logout
