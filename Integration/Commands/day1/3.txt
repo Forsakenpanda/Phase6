@@ -9,4 +9,13 @@ transferLimitFR
 create
 transferLimitTO
 1.00
+create
+WMAccount
+1200.00
+create
+TMAccount
+1500.00
+create
+PMAccount
+3000.00
 logout
