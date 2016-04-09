@@ -1,0 +1,16 @@
+login
+standard
+DAAccount
+withdrawal
+13
+250.00
+50.00
+logout
+login
+standard
+PBAccount
+paybill
+25
+CQ
+500.00
+logout
