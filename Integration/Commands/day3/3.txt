@@ -42,4 +42,9 @@ EC
 100.00
 TV
 10.00
+paybill
+24
+EC
+2000.00
+cancel
 logout

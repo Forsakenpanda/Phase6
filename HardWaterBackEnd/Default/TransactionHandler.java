@@ -233,14 +233,26 @@ public class TransactionHandler {
 			return false;
 		}
 		double fee = accounts.get(accountIndex).getFee(standardSession);
+
+	if (standardSession && accounts.get(accountIndex).getCompanyLimit(misc) + funds * 100 > 200000) {
+    	Main.reportError("exceeded company paybill limit to " + misc);
+    	return false;
+    } 
+
+
     if (standardSession && accounts.get(accountIndex).getPaybillLimit() + funds * 100 > 200000) {
-      Main.reportError("exceeded paybill limit");
+     Main.reportError("exceeded daily paybill limit");
       return false;
-    }
-		if (accounts.get(accountIndex).modifyFunds(funds, fee, false)) {
-      if (standardSession)
-        accounts.get(accountIndex).addPaybillLimit((int) funds * 100);
-      return true;
+    } 
+    
+
+	if (accounts.get(accountIndex).modifyFunds(funds, fee, false)) {
+      if (standardSession) {
+      	accounts.get(accountIndex).addPaybillLimit((int) funds * 100);
+      	accounts.get(accountIndex).addCompanyLimit((int) funds * 100, misc);
+      	return true;
+      }
+        
     }
     return false;
 	}

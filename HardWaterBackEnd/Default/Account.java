@@ -25,6 +25,10 @@ public class Account implements Comparable<Account> {
   private int paybillLimit;
   private int withdrawalLimit;
   private int depositLimit;
+  private int ecLimit;
+  private int cqLimit;
+  private int tvLimit;
+
 
 	/**
 	 * Constructor for Account.
@@ -46,6 +50,9 @@ public class Account implements Comparable<Account> {
     this.transferLimit = 0;
     this.withdrawalLimit = 0;
     this.depositLimit = 0;
+    this.ecLimit = 0;
+    this.cqLimit = 0;
+    this.tvLimit = 0;
 	}
 	
 	/**
@@ -63,6 +70,21 @@ public class Account implements Comparable<Account> {
    */
   public int getPaybillLimit () {
     return paybillLimit;
+  }
+
+  /**
+  *returns the current amount of money that has been paid to a single company in a standard session.
+  * @param comp the company in question
+  * @return the paybill fund to use.
+  */
+  public int getCompanyLimit(String comp) {
+  	if (comp.equals("EC")) {
+  		return ecLimit;
+  	} else if (comp.equals("CQ")) {
+  		return cqLimit;
+  	} else {
+  		return tvLimit;
+  	} 
   }
 
   /**
@@ -109,6 +131,21 @@ public class Account implements Comparable<Account> {
    */ 
   public void addPaybillLimit(int money) {
     paybillLimit += money;
+  }
+
+  /**
+  * Increases a specific company's paybill limit.
+  * @param money: the money to add to the limit
+  * @param comp: The company limit to add to
+  */
+  public void addCompanyLimit(int money, String comp) {
+  	if (comp.equals("EC")) {
+  		ecLimit += money;
+  	} else if (comp.equals("CQ")) {
+  		cqLimit += money;
+  	} else {
+  		tvLimit += money;
+  	} 
   }
 
 	/**
@@ -260,6 +297,8 @@ public class Account implements Comparable<Account> {
 		else
 			return -1;
 	}
+
+
 }
 
 	

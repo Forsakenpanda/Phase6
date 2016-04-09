@@ -4,6 +4,7 @@
 05 WAAccount            00000 00100.00   
 05 TTSNAccount          00000 00100.00   
 05 TTSSAccount          00000 00100.00   
+05 TTAAccount           00000 00100.00   
 05 TFNSAccount          00000 00100.00   
 05 TFSSAccount          00000 00100.00   
 05 TFAAccount           00000 00100.00   
