@@ -20,6 +20,7 @@ transfer
 8
 6
 99.95
+cancel
 logout
 login
 admin
