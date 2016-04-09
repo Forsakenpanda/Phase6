@@ -11,6 +11,5 @@ login
 admin
 changeplan
 DSSAccount
-00011
 00012
 logout
