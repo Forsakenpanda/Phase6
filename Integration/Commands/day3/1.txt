@@ -20,6 +20,7 @@ transfer
 8
 6
 99.95
+cancel
 logout
 login
 admin
@@ -34,4 +35,11 @@ admin
 changeplan
 CPAccount
 10
+logout
+login
+standard
+DAAccount
+deposit
+13
+300.00
 logout
