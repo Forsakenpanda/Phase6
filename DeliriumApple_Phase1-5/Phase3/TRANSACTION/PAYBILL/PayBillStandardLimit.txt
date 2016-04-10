@@ -1,9 +1,0 @@
-10 Timothy Franklin     00000 00000.00 S 
-03 Timothy Franklin     10002 02000.00 EC
-03 Timothy Franklin     10002 02000.00 EC
-03 Timothy Franklin     10002 02000.00 TV
-03 Timothy Franklin     10002 00100.00 TV
-00 Timothy Franklin     00000 00000.00   
-10 Timothy Franklin     00000 00000.00 S 
-03 Timothy Franklin     10002 02000.00 EC
-00 Timothy Franklin     00000 00000.00   

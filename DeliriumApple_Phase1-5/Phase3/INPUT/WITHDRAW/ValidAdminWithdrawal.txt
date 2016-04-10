@@ -1,7 +1,0 @@
-login
-admin
-withdrawal
-Troy Bartan
-10001
-700.00
-logout

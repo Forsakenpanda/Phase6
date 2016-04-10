@@ -1,6 +1,0 @@
-Please specify account type
-Login successful as admin
-Please enter name on account:
-Please enter account number:
-Invalid Account number
-Logout Successful

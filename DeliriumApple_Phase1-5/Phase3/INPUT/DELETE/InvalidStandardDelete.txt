@@ -1,5 +1,0 @@
-login
-standard
-Troy Bartan
-delete
-logout

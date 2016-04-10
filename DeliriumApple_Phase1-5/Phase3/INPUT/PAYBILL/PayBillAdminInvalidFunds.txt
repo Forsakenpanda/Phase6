@@ -1,8 +1,0 @@
-login
-admin
-paybill
-Troy Bartan
-10000
-TV
-550.00
-logout

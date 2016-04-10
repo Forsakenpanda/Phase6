@@ -1,6 +1,0 @@
-login
-admin
-enable
-George Frick
-10000
-logout

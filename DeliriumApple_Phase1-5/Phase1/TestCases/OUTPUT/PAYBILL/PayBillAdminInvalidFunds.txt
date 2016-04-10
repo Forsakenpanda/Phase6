@@ -1,9 +1,0 @@
-Please specify account type:
-Login successful as admin
-Please specify account holder name:
-Please specify account to pay bill from:
-Please specify company to pay:
-Please enter amount to pay:
-Insufficient funds
-Your balance is 500.00
-Logout successful

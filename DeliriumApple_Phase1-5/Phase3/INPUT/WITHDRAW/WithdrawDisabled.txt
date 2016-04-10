@@ -1,6 +1,0 @@
-login
-standard
-George Frick
-withdrawal
-15000
-logout

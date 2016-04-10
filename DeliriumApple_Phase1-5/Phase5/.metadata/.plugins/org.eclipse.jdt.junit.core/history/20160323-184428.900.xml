@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="ValidatorTest" project="Phase5" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="ValidatorTest" time="0.002">
-    <testcase name="withdrawalChecker" classname="ValidatorTest" time="0.002"/>
-    <testcase name="balanceChecker" classname="ValidatorTest" time="0.0"/>
-  </testsuite>
-</testrun>

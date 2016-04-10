@@ -1,7 +1,0 @@
-login
-admin
-delete
-Jose Ankin 
-10003 
-logout
-

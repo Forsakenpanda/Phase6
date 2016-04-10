@@ -1,6 +1,0 @@
-10 Timothy Franklin     00000 00000.00 S 
-08 Timothy Franklin     10002 01999.00   
-08                      20000 01999.00   
-08 Timothy Franklin     10002 00001.00   
-08                      20000 00001.00   
-00 Timothy Franklin     00000 00000.00   

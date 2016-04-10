@@ -1,7 +1,0 @@
-Please specify account type
-Plese enter account holder name:
-Login successful as standard user
-Please enter account number:
-Please enter amount to deposit:
-Your balance is 1220.10
-Logout successful

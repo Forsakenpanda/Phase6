@@ -1,7 +1,0 @@
-login
-admin
-deposit
-Troy Bartan
-10001
-700.10
-logout

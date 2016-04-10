@@ -1,6 +1,0 @@
-login
-standard
-George Frick
-deposit
-15000
-logout

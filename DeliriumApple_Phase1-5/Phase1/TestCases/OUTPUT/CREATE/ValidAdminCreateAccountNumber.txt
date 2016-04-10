@@ -1,6 +1,0 @@
-Please specify account type
-Login successful as admin user
-Please enter the account holder:
-Please enter the initial amount:
-Account created, account number is 30001 with balance 450.50.
-Logout Successful

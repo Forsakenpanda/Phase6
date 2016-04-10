@@ -1,5 +1,0 @@
-login
-standard
-George Frick
-paybill
-logout

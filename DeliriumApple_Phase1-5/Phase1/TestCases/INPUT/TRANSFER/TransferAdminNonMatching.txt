@@ -1,6 +1,0 @@
-login
-admin
-transfer
-Phil Cooper
-10000
-logout

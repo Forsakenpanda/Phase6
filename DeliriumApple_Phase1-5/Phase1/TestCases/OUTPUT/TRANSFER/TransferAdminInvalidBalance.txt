@@ -1,9 +1,0 @@
-Please specify account type
-Login successful as admin
-Please enter account holder name:
-Please enter account number to transfer from:
-Please enter account number to transfer to:
-Please enter amount to transfer:
-Insufficient funds
-Your balance is 500.00
-Logout successful

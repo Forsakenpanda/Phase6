@@ -1,6 +1,0 @@
-Please specify account type:
-Login successful as admin
-Please enter account holder name: 
-Please enter account number:
-Account is disabled
-Logout successful
