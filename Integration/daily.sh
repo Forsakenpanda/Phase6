@@ -9,7 +9,7 @@ To run the script, compile the back end in the HardWaterBackEnd direcotry with t
   make all
 Then compile the front end in the LSR directory with the command:
   make all
-Then ensure that you are in the Integration directory, and entern the command where <day> is an integer from 1-5 indicating the day:
+Then ensure that you are in the Integration directory, and enter the command where <day> is an integer from 1-5 indicating the day:
   ./daily.sh <day>
 
 INFORMATION
