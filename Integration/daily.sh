@@ -1,5 +1,13 @@
 #!/bin/bash
-
+#Copyright 2016 Jason, Pat, Nicholas, Mirna
+<<COMMENT
+The daily script is a script that will run through the commands for a given day.
+To run the script, ensure that you are in the Integration directory, then run the command where <day> is an integer from 1-5 indicating the day:
+  ./daily.sh <day>
+The files in the Integration/Accounts directory will be updated by the back end.
+The Integration/Command directory includes all the commands for the front end to process.
+The Integration/Transactions directory contains all the the transactions that were created from the front end, and the merged transaction file is created in the same directory.
+COMMENT
 if [ "$#" -ne 1 ]; then
   echo "Please enter the day number as an agrument"
   exit

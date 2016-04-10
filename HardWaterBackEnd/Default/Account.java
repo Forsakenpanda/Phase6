@@ -22,7 +22,6 @@ public class Account implements Comparable<Account> {
 	private char plan;
 	private int counter;
   private int transferLimit;
-  private int paybillLimit;
   private int withdrawalLimit;
   private int depositLimit;
   private int ecLimit;
@@ -46,7 +45,6 @@ public class Account implements Comparable<Account> {
 		this.enabled = enabled;
 		this.plan = plan;
 		this.counter = counter;
-    this.paybillLimit = 0;
     this.transferLimit = 0;
     this.withdrawalLimit = 0;
     this.depositLimit = 0;
@@ -63,15 +61,6 @@ public class Account implements Comparable<Account> {
 		return name;
 	}
   
-  /**
-   * Returns the current amount of money that has been paid in a 
-   * standard session.
-   * @return the paybill fund use.
-   */
-  public int getPaybillLimit () {
-    return paybillLimit;
-  }
-
   /**
   *returns the current amount of money that has been paid to a single company in a standard session.
   * @param comp the company in question
@@ -124,13 +113,6 @@ public class Account implements Comparable<Account> {
    */
   public void addTransferLimit(int money) {
     transferLimit += money;
-  }
-  /**
-   * Increases the paybill limit.
-   * @param money the money to add to the limit
-   */ 
-  public void addPaybillLimit(int money) {
-    paybillLimit += money;
   }
 
   /**
