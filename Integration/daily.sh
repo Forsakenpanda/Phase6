@@ -1,9 +1,18 @@
 #!/bin/bash
 #Copyright 2016 Jason, Pat, Nicholas, Mirna
 <<COMMENT
+DESCRIPTION
 The daily script is a script that will run through the commands for a given day.
-To run the script, ensure that you are in the Integration directory, then run the command where <day> is an integer from 1-5 indicating the day:
+
+HOW TO RUN
+To run the script, compile the back end in the HardWaterBackEnd direcotry with the command:
+  make all
+Then compile the front end in the LSR directory with the command:
+  make all
+Then ensure that you are in the Integration directory, and entern the command where <day> is an integer from 1-5 indicating the day:
   ./daily.sh <day>
+
+INFORMATION
 The files in the Integration/Accounts directory will be updated by the back end.
 The Integration/Command directory includes all the commands for the front end to process.
 The Integration/Transactions directory contains all the the transactions that were created from the front end, and the merged transaction file is created in the same directory.
